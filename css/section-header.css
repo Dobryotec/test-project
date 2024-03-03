@@ -1,0 +1,88 @@
+@import url("./mob-menu.css");
+
+.header {
+  padding-top: 30px;
+  margin-bottom: 32px;
+}
+
+.nav__logo {
+  outline: transparent;
+  > img {
+    width: 180px;
+    height: 180px;
+
+    @media screen and (min-width: 767px) {
+      width: 283px;
+      height: 89px;
+    }
+  }
+  transition: all 0.3s;
+}
+
+.nav__logo:hover,
+.nav__logo:focus {
+  transform: scale(1.1);
+}
+
+.nav__wrapper-menu-icon {
+  width: 30px;
+  height: 30px;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+.nav__wrapper-menu {
+  display: none;
+  @media screen and (min-width: 767px) {
+    display: block;
+  }
+}
+
+.nav__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__wrapper-menu {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 40px;
+  left: 77px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 51px;
+}
+
+.menu__item {
+  font-size: 20px;
+  font-weight: 700;
+  color: #715d00;
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menu__link {
+  outline: transparent;
+}
+
+.menu__item:hover {
+  color: #f9e994;
+  transform: scale(1.1);
+}
+
+.menu__link:focus {
+  color: #f9e994;
+}

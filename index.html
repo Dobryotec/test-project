@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pet Naturals, pet food sales" />
+    <meta name="keywords" content="Pet Naturals, pet food, sales" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Pet Naturals</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-hero-wrapper">
+        <div class="header-hero-wrapper__container">
+          <header class="header">
+            <nav class="nav">
+              <div class="nav__block">
+                <a href="/" class="nav__logo">
+                  <img
+                    src="./images/header/logo.svg"
+                    alt="logo"
+                    width="283"
+                    height="89"
+                  />
+                </a>
+                <div class="nav__wrapper-menu">
+                  <img
+                    class="nav__cloud-image"
+                    src="./images/header/cloud.svg"
+                    alt="cloud"
+                  />
+                  <ul class="nav__list menu">
+                    <li class="menu__item">
+                      <a class="menu__link" href="#form">Order</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#about">About</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link" href="#results">Results</a>
+                    </li>
+                  </ul>
+                </div>
+                <button
+                  type="button"
+                  class="nav__wrapper-menu-icon"
+                  id="data-menu-open"
+                >
+                  <img
+                    src="./images/header/menu.svg"
+                    width="30"
+                    height="30"
+                    alt="menu icon"
+                  />
+                </button>
+              </div>
+              <div class="mob-menu is-hidden" id="data-menu">
+                <div class="mob-menu__container">
+                  <div class="mob-menu__overlay">
+                    <div class="mob-menu__body">
+                      <img
+                        class="mob-menu__close-btn"
+                        id="data-menu-close"
+                        src="./images/header/close.svg"
+                        alt="close icon"
+                        width="30"
+                        height="30"
+                      />
+                      <div>
+                        <ul class="mob-menu__list">
+                          <li class="mob-menu__item">
+                            <a class="menu__link" href="#form">Order</a>
+                          </li>
+                          <li class="mob-menu__item">
+                            <a class="menu__link" href="#about">About</a>
+                          </li>
+                          <li class="mob-menu__item">
+                            <a class="menu__link" href="#results">Results</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+          <section class="section-hero">
+            <h1 class="section-hero__title">
+              Pet Naturals of Vermont, Calming, For Cats
+            </h1>
+            <div class="section-hero__wrapper-content">
+              <div class="section-hero__first-column">
+                <p class="section-hero__description">
+                  Your cat deserves the best pet supplement the world has to
+                  offer. That's what's in the package.
+                </p>
+                <ul class="section-hero__features-list features">
+                  <li class="features__item">
+                    Features a patented calming blend
+                  </li>
+                  <li class="features__item">
+                    Doesn’t contain herbal ingredients
+                  </li>
+                  <li class="features__item">Helps manage everyday stress</li>
+                </ul>
+              </div>
+              <div class="section-hero__second-column column-images">
+                <img
+                  class="column-images__cat-left"
+                  src="./images/section-hero/cat-left.webp"
+                  alt="cat"
+                  width="320"
+                  height="390"
+                />
+                <img
+                  class="column-images__feed"
+                  src="./images/section-hero/feed.webp"
+                  alt="feed"
+                  width="388"
+                  height="388"
+                />
+                <img
+                  class="column-images__cat-right"
+                  src="./images/section-hero/cat-right.webp"
+                  alt="cat"
+                  width="320"
+                  height="390"
+                />
+              </div>
+
+              <form id="form" class="section-hero__third-column form">
+                <div class="form__wrapper-image">
+                  <img
+                    src="./images/section-hero/form-rectangle.svg"
+                    alt="icon rectangle"
+                  />
+                </div>
+                <h2 class="form__title">Time left</h2>
+                <p class="form__timer">2:00:00</p>
+                <div class="form__wrapper-prices">
+                  <p class="form__old-price">120uah</p>
+                  <p class="form__new-price">60uah</p>
+                </div>
+                <div class="form__block-inputs">
+                  <div class="form__wrapper-input">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name-input"
+                      class="form__input"
+                      placeholder="Name"
+                    />
+                    <img
+                      src="./images/section-hero/footprint-grey.webp"
+                      alt="footprint icon"
+                      width="24"
+                      height="24"
+                    />
+                  </div>
+                  <div class="form__wrapper-input">
+                    <img
+                      src="./images/section-hero/footprint-grey.webp"
+                      alt="footprint icon"
+                      width="24"
+                      height="24"
+                    />
+                    <input
+                      type="tel"
+                      name="phone"
+                      class="form__input"
+                      id="phone-input"
+                      placeholder="+38(0__)__-__-___"
+                      pattern="^\+38\(0\d{2}\)\d{2}-\d{2}-\d{3}$"
+                    />
+                  </div>
+                  <button class="form__button">Order</button>
+                </div>
+
+                <p class="form__order-date">Order date:</p>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+      <main class="main">
+        <section id="about" class="section-manufacturer">
+          <div class="section-manufacturer__container">
+            <h2 class="section-manufacturer__title">From the manufacturer</h2>
+            <ul class="advantages">
+              <li class="advantages__item">
+                <div class="advantages__wrapper-image">
+                  <img
+                    src="./images/section-manufacturer/cat-sleep.webp"
+                    width="212"
+                    height="212"
+                    alt="picture cat sleep"
+                  />
+                </div>
+
+                <div class="advantages__body card-body">
+                  <h3 class="card-body__title">Keep Calm and Carry On</h3>
+                  <p class="card-body__description">
+                    Are you searching for a better way to ease your pet’s
+                    separation anxiety or stress? Calming chews help relieve pet
+                    stress without corn, wheat or artificial ingredients.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__wrapper-image">
+                  <img
+                    src="./images/section-manufacturer/calm.webp"
+                    width="212"
+                    height="212"
+                    alt="picture calm"
+                  />
+                </div>
+
+                <div class="advantages__body card-body">
+                  <h3 class="card-body__title">Peace of Mind</h3>
+                  <p class="card-body__description">
+                    Pet Naturals of Vermont’s research-backed formula makes it
+                    safe to double or triple the amount in times of added
+                    stress.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__wrapper-image">
+                  <img
+                    src="./images/section-manufacturer/feed.webp"
+                    width="212"
+                    height="212"
+                    alt="picture feed"
+                  />
+                </div>
+                <div class="advantages__body card-body">
+                  <h3 class="card-body__title">More than a Tasty Treat</h3>
+                  <p class="card-body__description">
+                    Don’t let its satisfying chicken liver flavor fool you.
+                    Technically, Calming isn’t a treat but it sure tastes like
+                    one. Reward your best buddy with a Calming chew.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="results" class="section-calming-chews">
+          <div class="section-calming-chews__container">
+            <h2 class="section-calming-chews__title">
+              Best Uses for Calming Chews
+            </h2>
+            <div class="section-calming-chews__wrapper">
+              <div class="section-calming-chews__results results-body">
+                <img
+                  class="results-body__image"
+                  src="./images/secrtion-calming-chews/figure.svg"
+                  width="760"
+                  height="354"
+                  alt="firgure rectangle"
+                />
+                <div class="results-body__text">
+                  <span
+                    >Car rides. Vet visits. Thunderstorms. Boarding. Parties.
+                    These are just a handful of times when Calming chews may
+                    come in handy. Does your dog hate to be left home alone?
+                    Does your cat love hiding under the bed? Serve up a Calming
+                    chew to help soothe your furry pal’s anxiety and make your
+                    life easier, too!</span
+                  >
+                  <span>For Best Results:</span>
+
+                  <span
+                    >We recommend administering Calming chews 30 minutes prior
+                    to a stressful event. The 30-minute activation period gives
+                    you a chance to increase dosage if you’re not seeing
+                    expected results. Calming is safe for unique stress inducing
+                    events and for long-term use to help manage everyday stress.
+                  </span>
+                </div>
+              </div>
+              <img
+                class="section-calming-chews__image"
+                src="./images/secrtion-calming-chews/cat.webp"
+                alt="picture cat with doctor"
+                width="300"
+                height="300"
+              />
+            </div>
+          </div>
+          <div class="section-calming-chews__wrapper-image">
+            <img
+              src="./images/secrtion-calming-chews/grass.webp"
+              height="174"
+              alt="picture grass"
+            />
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+    <script type="module" src="./js/timer.js"></script>
+    <script type="module" src="./js/orderDate.js"></script>
+    <script type="module" src="./js/validateAndSendDataForm.js"></script>
+    <script type="module" src="./js/openAndCloseMenu.js"></script>
+  </body>
+</html>
