@@ -1,15 +1,19 @@
 @import url("./mob-menu.css");
 
 .header {
-  padding-top: 30px;
+  padding-top: 20px;
   margin-bottom: 32px;
+
+  @media screen and (min-width: 767px) {
+    padding-top: 30px;
+  }
 }
 
 .nav__logo {
   outline: transparent;
   > img {
     width: 180px;
-    height: 180px;
+    height: 80px;
 
     @media screen and (min-width: 767px) {
       width: 283px;
